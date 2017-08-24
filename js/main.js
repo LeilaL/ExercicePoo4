@@ -2,7 +2,8 @@
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      //  alert(this.responseText);
+      clients = JSON.parse(this.responseText);
+      infosClient.show();
     }
   };
   xhttp.open("GET", "clients.json", true);
@@ -17,6 +18,8 @@
       }
     };
   }
+  var infosClient = new liste();
+
 
   this.trier = function (tab, key) {
           tab.sort(function (a, b) {
@@ -27,3 +30,4 @@
               return 0;
           });
           this.show();
+}

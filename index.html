@@ -24,17 +24,15 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="dropdown mt-5 ml-5">
-          <button class="btn btn-secondary dropdown-toggle" onclick="liste()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Choix information
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">ID</a>
-            <a class="dropdown-item" href="#">Prénom</a>
-            <a class="dropdown-item" href="#">Age</a>
-            <a class="dropdown-item" href="#">Ville</a>
-          </div>
-        </div>
+
+        <select class="custom-select mb-2 mr-sm-2 mb-sm-0 mt-5 ml-5" id="inlineFormCustomSelect">
+            <option selected>Choix information</option>
+            <option value="1">ID</option>
+            <option value="2">Prénom</option>
+            <option value="3">Age</option>
+            <option value="3">Ville</option>
+          </select>
+
 
         <div class="container mt-5">
 <table class="table table-bordered">
